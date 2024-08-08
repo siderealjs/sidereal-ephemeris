@@ -1,9 +1,7 @@
 import fs from 'fs';
 import path from "path";
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = path.resolve();
 
 // Calcola l'offset del record specifico
 function calculateOffset(key: number, recordSize: number) {
