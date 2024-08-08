@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // O una versione più recente
+    "module": "es2020", // Imposta il modulo a ES2020 o successivo
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "composite": false, // Assicurati che questo sia impostato su false o non presente
+    "noEmit": false // Assicurati che noEmit sia false o non presente
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
