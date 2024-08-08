@@ -7,9 +7,6 @@ esbuild
     outfile: "dist/index.js",
     sourcemap: true,
     minify: true,
-    // declaration: true,
-   // declarationMap: true,
-   // emitDeclarationOnly: true,
     platform: "node",
     target: ["esnext"],
     format: "esm", // Assicurati di usare il formato corretto
