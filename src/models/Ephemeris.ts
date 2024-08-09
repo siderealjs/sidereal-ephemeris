@@ -17,6 +17,7 @@ export class Ephemeris {
     const key = calculateJulianDay(date);
 
 
+    console.log('DAY', key)
     // Calcola l'offset per il record richiesto
     const offset = (key - firstKey) * recordSize
 

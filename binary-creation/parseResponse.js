@@ -13,10 +13,10 @@ const parseResponse = (apiResponse) => {
   let currentData = {};
 
   lines.forEach((line, index) => {
-    if (index % 4 === 0) {
+    if (index % 2 === 0) {
       // Righe di data e tempo
       currentDate = parseInt(line.split("=")[0].trim());
-    } else if (index % 4 === 1) {
+    } else if (index % 2 === 1) {
       // Righe di X, Y, Z
       const parts = line.split(/\s*=\s*/);
 
@@ -27,7 +27,7 @@ const parseResponse = (apiResponse) => {
       };
     }
 
-    if (index % 4 === 2 && currentDate !== null) {
+    if (index % 2 === 1) {
       // Aggiungi i dati all'array
       data.push({ date: currentDate, data: currentData });
     }
