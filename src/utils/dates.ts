@@ -7,9 +7,9 @@ export const calculateJulianDay = (date: Date) => {
   const differenceInMillis = date.getTime() - epoch.getTime();
 
   // Converti la differenza da millisecondi a giorni
-  const differenceInDays = Math.round(
-    differenceInMillis / (1000 * 60 * 60 * 24)
-  );
+  const differenceInDaysFloat = differenceInMillis / (1000 * 60 * 60 * 24);
+
+  const differenceInDays = Math.round(differenceInDaysFloat);
 
   return differenceInDays + baseKey;
 };

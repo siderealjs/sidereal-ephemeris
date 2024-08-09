@@ -1,4 +1,3 @@
-import fs from "fs";
 import path from "path";
 import { BodyName } from "./types/BodyName.type.js";
 import { Ephemeris } from "./models/Ephemeris.js";
@@ -10,7 +9,7 @@ const loadEphemeris = (bodyName: BodyName) => {
 
   const filePath = path.resolve(__dirname, `../data/${bodyName}.bin`);
 
-  return new Ephemeris(filePath);
+  return new Ephemeris(bodyName, filePath);
 };
 
 export default loadEphemeris;

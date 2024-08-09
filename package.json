@@ -1,16 +1,17 @@
 {
   "name": "sidereal-ephemeris",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "module": "dist/index.js",
   "files": [
     "dist/**/*",
-    "data/**/*"
+    "data/**/*",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bin-gen": "npx tsx binary-creation/index.js",
+    "bin-gen": "npx tsx binary-creation/index.ts",
     "build": "node esbuild.js",
     "dev": "npx tsx dev/dev.ts"
   },
@@ -21,6 +22,8 @@
   "devDependencies": {
     "@types/node": "^22.1.0",
     "esbuild": "^0.23.0",
-    "typescript": "^5.5.4"
+    "eslint": "^9.8.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.0.1"
   }
 }

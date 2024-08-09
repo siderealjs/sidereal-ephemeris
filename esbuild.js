@@ -6,7 +6,7 @@ esbuild
     bundle: true,
     outfile: "dist/index.js",
     sourcemap: true,
-    minify: false,
+    minify: true,
     platform: "node",
     target: ["esnext"],
     format: "esm", // Assicurati di usare il formato corretto
